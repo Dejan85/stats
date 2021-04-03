@@ -5,9 +5,9 @@ export const csvFileReader = (fileName: string) => {
     const data: string[][] = [];
 };
 
-export const read = (): string[][] => {
+export const read = (fileName: string): string[][] => {
     return fs
-        .readFileSync("football.csv", {
+        .readFileSync(fileName, {
             encoding: "utf-8",
         })
         .split("\n")
