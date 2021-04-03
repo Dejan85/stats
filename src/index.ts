@@ -1,11 +1,7 @@
-import { read, csvFileReader } from './CsvFileReader';
+import { read, csvFileReader } from './csvFileReader';
+import { matchResult } from './MathcResult';
 
 
-enum matchResult {
-    homeWin = "H",
-    awayWin = "A",
-    draw = "D",
-}
 
 const matches: string[][] = read('football.csv');
 
