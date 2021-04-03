@@ -8,17 +8,11 @@ const matches = fs
         return row.split(",");
     });
 
-interface MatchResult {
-    homeWin: string;
-    awayWin: string;
-    draw: string;
+enum matchResult {
+    homeWin = "H",
+    awayWin = "A",
+    draw = "D",
 }
-
-const matchResult: MatchResult = {
-    homeWin: "H",
-    awayWin: "A",
-    draw: "D",
-};
 
 let manUnitedWins: number = 0;
 
